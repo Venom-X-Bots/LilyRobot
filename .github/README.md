@@ -24,7 +24,7 @@
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─
 </h3>
 
-- Get your [Necessary Variables](https://github.com/venomXbots/Lilyrobot)
+- Get your [Necessary Variables]([https://github.com/venomXbots/Lilyrobot](https://github.com/Venom-X-Bots/Lilyrobot))
 - Upgrade and Update by :
 `sudo apt-get update && sudo apt-get upgrade -y`
 - Install Ffmpeg by :
