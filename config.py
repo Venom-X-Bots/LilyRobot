@@ -16,7 +16,7 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 30000))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 350000))
 
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID", None))
@@ -78,21 +78,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/50230b592825a2e3051c9.jpg)"
+    "START_IMG_URL", "https://graph.org/file/dd2305e8723cb39aee188.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/47605a2381cd25cc8b050.jpg"
+    "PING_IMG_URL", "https://graph.org/file/4a72c60cab00853718087.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/c9d675e3693c169215ca5.jpg"
-STATS_IMG_URL = "https://graph.org/file/697b3f7ff443bc0fef6dc.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org/file/b79ee36deb5e8302825da.jpg"
-TELEGRAM_VIDEO_URL = "https://graph.org/file/ecfc9e0d3360e58d36700.jpg"
-STREAM_IMG_URL = "https://graph.org/file/a054899caa2700893a3d6.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org/file/fd2cd43c1b3e188f2bbec.jpg"
-YOUTUBE_IMG_URL = "https://graph.org/file/77785bfc6eceb77dd5edd.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/77785bfc6eceb77dd5edd.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/b5f7e7a637ac7e32daf71.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/65afd7d5aabebf2e1a067.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/1f05ea59a08727a9ea01e.jpg"
+STATS_IMG_URL = "https://graph.org/file/1f05ea59a08727a9ea01e.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/a52584b57a0dd44f62c8f.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/a52584b57a0dd44f62c8f.jpg"
+STREAM_IMG_URL = "https://graph.org/file/1f05ea59a08727a9ea01e.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/2a0840ee7b5ef1c0ed511.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/f2d8de51c5a313f82359e.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/4b11c10cf7c7bdf1b5fe5.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/4b11c10cf7c7bdf1b5fe5.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/4b11c10cf7c7bdf1b5fe5.jpg"
 
 
 
@@ -101,7 +101,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
-DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:360"))
+DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:36000"))
 
 
 if SUPPORT_CHANNEL:
